@@ -1,0 +1,29 @@
+body{
+	background:url(image/bgimg.jpg); 
+	background-size: 100%;
+}
+hr{
+	color: yellow;
+	padding: 10px 10px 10px 10px;
+}
+h2{
+	font-size: 40px;
+	color: #bdb76b;
+	font-style: italic;
+	margin-left: 20%;
+}
+div{
+	text-align:;
+}
+p{
+	text-align: ;
+	margin-left: 35%;
+}
+button{
+	text-align: center;
+	font-size: 15px;
+	border-radius: 30px;
+	padding:10px 10px 10px 10px;
+	font-style: italic;
+	color: #228b22;
+}

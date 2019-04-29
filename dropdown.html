@@ -1,0 +1,95 @@
+
+
+<html>
+<head>
+<title>DROP DOWN MENU</title>
+<style type="text/css">
+  body { margin:auto; margin-top:50px;}
+
+h1 { font-family:Cuprum; text-align:center;}
+
+#mymenu { position:absolute; width:900px; top:100; margin:auto; right:0; left:0; font-family:Cuprum; font-weight: bold; text-transform: uppercase;}
+
+#mymenu ul { list-style: none; margin: 0; padding: 0;}
+
+#mymenu ul li { 
+
+
+width:150px; 
+height:40px;
+background:black; 
+color:white; position:relative; float: left; display: inline;
+padding: 10px;
+text-align: center;
+line-height: 40px;
+border:1px solid white;
+}
+
+#mymenu ul li:hover { 
+
+background:red; 
+
+}
+
+#mymenu ul li ul { left:0; position: absolute; top:61px;}
+
+a { color:white; text-decoration: none;}
+
+
+
+
+
+</style>
+<meta charset="utf-8">
+<link rel="stylesheet" href="stil.css">
+<link href='https://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://www.bitstorm.org/jquery/color-animation/jquery.animate-colors-min.js"></script>
+<script src="stil.js"></script>
+</head>$(document).ready(function(){
+  $(".submenu").hide();
+  $(".submenu2").hide();
+  $(".aboutus").mouseover(function(){
+  $(".submenu").show();
+});
+  $(".aboutus").mouseleave(function(){
+  $(".submenu").hide();
+});
+    $(".services").mouseover(function(){
+    $(".submenu2").show();
+});
+    $(".services").mouseleave(function(){
+    $(".submenu2").hide();
+});
+
+});
+
+
+
+<body>
+ <h1></h1>
+<div id="mymenu">
+<ul>
+<li><a href="#">HOME</a></li>
+<li class="aboutus"><a href="#" >ABOUT US</a>
+
+  <ul>
+    <li class="submenu"><a href="#">HISTORY</a></li>
+  <li class="submenu"><a href="#">CEOS</a></li>
+  <li class="submenu"><a href="#">WORKERS</a></li>
+  <li class="submenu"><a href="#">WHAT WE DO</a></li>
+  </ul>
+
+<li  class="services"><a href="#"">OUR SERVICES</a>
+  <ul>
+    <li class="submenu2"><a href="#">DESIGN</a></li>
+  <li class="submenu2"><a href="#">HOSTING</a></li>
+  <li class="submenu2" ><a href="#">LOGO DESIGN</a></li>
+  </ul>  
+
+<li><a href="#">REFERENCES</a></li>
+<li><a href="#">CONTACT</a></li>
+
+</ul>
+</div>
+</body>
